@@ -20,6 +20,11 @@
 		94826B2D159BBC6B00DFCA69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94826B0E159BBC6B00DFCA69 /* Foundation.framework */; };
 		94826B35159BBC6B00DFCA69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94826B33159BBC6B00DFCA69 /* InfoPlist.strings */; };
 		94826B38159BBC6B00DFCA69 /* Project_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94826B37159BBC6B00DFCA69 /* Project_1Tests.m */; };
+		94826B43159BBFEA00DFCA69 /* BaseDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 94826B42159BBFEA00DFCA69 /* BaseDrink.m */; };
+		94826B46159BC00F00DFCA69 /* DrinkFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 94826B45159BC00F00DFCA69 /* DrinkFactory.m */; };
+		94826B49159BC03A00DFCA69 /* BlendedDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 94826B48159BC03A00DFCA69 /* BlendedDrink.m */; };
+		94826B4C159BC04D00DFCA69 /* HotDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 94826B4B159BC04D00DFCA69 /* HotDrink.m */; };
+		94826B4F159BC06400DFCA69 /* ColdDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 94826B4E159BC06400DFCA69 /* ColdDrink.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,16 @@
 		94826B34159BBC6B00DFCA69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94826B36159BBC6B00DFCA69 /* Project_1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project_1Tests.h; sourceTree = "<group>"; };
 		94826B37159BBC6B00DFCA69 /* Project_1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project_1Tests.m; sourceTree = "<group>"; };
+		94826B41159BBFEA00DFCA69 /* BaseDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDrink.h; sourceTree = "<group>"; };
+		94826B42159BBFEA00DFCA69 /* BaseDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrink.m; sourceTree = "<group>"; };
+		94826B44159BC00F00DFCA69 /* DrinkFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkFactory.h; sourceTree = "<group>"; };
+		94826B45159BC00F00DFCA69 /* DrinkFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkFactory.m; sourceTree = "<group>"; };
+		94826B47159BC03A00DFCA69 /* BlendedDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlendedDrink.h; sourceTree = "<group>"; };
+		94826B48159BC03A00DFCA69 /* BlendedDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlendedDrink.m; sourceTree = "<group>"; };
+		94826B4A159BC04D00DFCA69 /* HotDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotDrink.h; sourceTree = "<group>"; };
+		94826B4B159BC04D00DFCA69 /* HotDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotDrink.m; sourceTree = "<group>"; };
+		94826B4D159BC06400DFCA69 /* ColdDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColdDrink.h; sourceTree = "<group>"; };
+		94826B4E159BC06400DFCA69 /* ColdDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColdDrink.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +127,21 @@
 			isa = PBXGroup;
 			children = (
 				94826B1B159BBC6B00DFCA69 /* AppDelegate.h */,
+				94826B44159BC00F00DFCA69 /* DrinkFactory.h */,
+				94826B45159BC00F00DFCA69 /* DrinkFactory.m */,
 				94826B1C159BBC6B00DFCA69 /* AppDelegate.m */,
 				94826B1E159BBC6B00DFCA69 /* MainStoryboard.storyboard */,
 				94826B21159BBC6B00DFCA69 /* ViewController.h */,
 				94826B22159BBC6B00DFCA69 /* ViewController.m */,
 				94826B13159BBC6B00DFCA69 /* Supporting Files */,
+				94826B41159BBFEA00DFCA69 /* BaseDrink.h */,
+				94826B42159BBFEA00DFCA69 /* BaseDrink.m */,
+				94826B47159BC03A00DFCA69 /* BlendedDrink.h */,
+				94826B48159BC03A00DFCA69 /* BlendedDrink.m */,
+				94826B4A159BC04D00DFCA69 /* HotDrink.h */,
+				94826B4B159BC04D00DFCA69 /* HotDrink.m */,
+				94826B4D159BC06400DFCA69 /* ColdDrink.h */,
+				94826B4E159BC06400DFCA69 /* ColdDrink.m */,
 			);
 			path = "Project 1";
 			sourceTree = "<group>";
@@ -261,6 +286,11 @@
 				94826B19159BBC6B00DFCA69 /* main.m in Sources */,
 				94826B1D159BBC6B00DFCA69 /* AppDelegate.m in Sources */,
 				94826B23159BBC6B00DFCA69 /* ViewController.m in Sources */,
+				94826B43159BBFEA00DFCA69 /* BaseDrink.m in Sources */,
+				94826B46159BC00F00DFCA69 /* DrinkFactory.m in Sources */,
+				94826B49159BC03A00DFCA69 /* BlendedDrink.m in Sources */,
+				94826B4C159BC04D00DFCA69 /* HotDrink.m in Sources */,
+				94826B4F159BC06400DFCA69 /* ColdDrink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
