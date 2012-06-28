@@ -16,16 +16,16 @@
 
 - (void)viewDidLoad
 {
-    blendedDrinkLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 50.0f, 130.0f, 25.0f)];
+    blendedDrinkLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 50.0f, 100.0f, 25.0f)];
     if (blendedDrinkLabel != nil)
     {
         blendedDrinkLabel.backgroundColor = [UIColor blackColor];
-        blendedDrinkLabel.text = @"Blended Drink:";
+        blendedDrinkLabel.text = @"Drink one:";
         blendedDrinkLabel.textAlignment = UITextAlignmentLeft;
         blendedDrinkLabel.textColor = [UIColor whiteColor];
         [self.view addSubview:blendedDrinkLabel];
     }
-    blendedDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(130.0f, 50.0f, 100.0f, 25.0f)];
+    blendedDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 50.0f, 220.0f, 25.0f)];
     if (blendedDrinkInfo != nil)
     {
         blendedDrinkInfo.backgroundColor = [UIColor blackColor];
@@ -37,12 +37,12 @@
     if (hotDrinkLabel != nil)
     {
         hotDrinkLabel.backgroundColor = [UIColor blackColor];
-        hotDrinkLabel.text = @"Hot Drink:";
+        hotDrinkLabel.text = @"Drink two:";
         hotDrinkLabel.textAlignment = UITextAlignmentLeft;
         hotDrinkLabel.textColor = [UIColor whiteColor];
         [self.view addSubview:hotDrinkLabel];
     }
-    hotDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 100.0f, 25.0f)];
+    hotDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 220.0f, 25.0f)];
     if (hotDrinkInfo != nil)
     {
         hotDrinkInfo.backgroundColor = [UIColor blackColor];
@@ -54,12 +54,12 @@
     if (coldDrinkLabel != nil)
     {
         coldDrinkLabel.backgroundColor = [UIColor blackColor];
-        coldDrinkLabel.text = @"Cold Drink:";
+        coldDrinkLabel.text = @"Drink three:";
         coldDrinkLabel.textAlignment = UITextAlignmentLeft;
         coldDrinkLabel.textColor = [UIColor whiteColor];
         [self.view addSubview:coldDrinkLabel];
     }
-    coldDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 150.0f, 100.0f, 25.0f)];
+    coldDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 150.0f, 220.0f, 25.0f)];
     if (coldDrinkInfo != nil)
     {
         coldDrinkInfo.backgroundColor = [UIColor blackColor];
