@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+ UILabel *blendedDrinkLabel;
+ UILabel *blendedDrinkInfo;
+ UILabel *hotDrinkLabel;
+ UILabel *hotDrinkInfo;
+ UILabel *coldDrinkLabel;
+ UILabel *coldDrinkInfo;
+ }
 
 @end

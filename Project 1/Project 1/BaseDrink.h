@@ -8,20 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum
-{
-    DRINKTYPE_BLENDED=0,
-    DRINKTYPE_COLD,
-    DRINKTYPE_HOT
-}EDrinkKType;
+
 @interface BaseDrink : NSObject
 {
-    EDrinkKType _drinkType;
+ @private
+    int _drinkType;
     NSString *_drinkName;
     bool ice;
+    int _time;
+    
 }
 
--(void)initKindOfDrink: (int)drinkType DrinkName:(NSString*)drinkName;
--(void)setDrinkAtt:(EDrinkKType)drinkType drinkName:(NSString*)drinkName needsIce:(bool)needsIce;
+
+-(void)setDrinkAtt:(int)drinkType drinkName:(NSString*)drinkName needsIce:(bool)needsIce time:(int)time;
 
 @end

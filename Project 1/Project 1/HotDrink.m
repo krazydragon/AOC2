@@ -15,7 +15,7 @@
 {
     if (self =  [super init])
     {
-        [self setDrinkAtt:DRINKTYPE_HOT drinkName:@"Hot" needsIce: NO];
+        [self setDrinkAtt:2 drinkName:@"Hot" needsIce: NO time:3];
     }
     return self;
 }
