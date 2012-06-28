@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseDrink.h"
 
-@interface BlendedDrink : NSObject
+@interface BlendedDrink : BaseDrink
 
 @end

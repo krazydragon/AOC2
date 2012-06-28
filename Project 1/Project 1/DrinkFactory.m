@@ -10,5 +10,19 @@
 
 @implementation DrinkFactory
 
- 
+-(BaseDrink*)Getdrink:(int)drinkType
+{
+    if (drinkType == 0) {
+        
+    }
+    else if (drinkType == 1) {
+        
+    }
+    else if (drinkType == 2) {
+        
+    }
+    return nil;
+}
+
+
 @end

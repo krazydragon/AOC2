@@ -7,7 +7,16 @@
 //
 
 #import "HotDrink.h"
+#import "BaseDrink.h"
 
 @implementation HotDrink
 
+-(id)init
+{
+    if (self =  [super init])
+    {
+        [self setDrinkAtt:DRINKTYPE_HOT drinkName:@"Hot" needsIce: NO];
+    }
+    return self;
+}
 @end

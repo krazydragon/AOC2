@@ -9,5 +9,19 @@
 #import "BaseDrink.h"
 
 @implementation BaseDrink
+-(id)initKindOfDrink: (int)drinkType DrinkName:(NSString*)drinkName
+{
+    
+    
+    
+}
+
+-(void)setDrinkAtt:(EDrinkKType)drinkType drinkName:(NSString*)drinkName needsIce:(bool)needsIce
+{
+    ice = needsIce;
+    _drinkName = drinkName;
+    _drinkType = drinkType;
+    
+}
 
 @end

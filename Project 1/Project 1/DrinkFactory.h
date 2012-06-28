@@ -11,5 +11,5 @@
 
 @interface DrinkFactory : NSObject
 
-
+-(BaseDrink*)Getdrink:(int)drinkType;
 @end
