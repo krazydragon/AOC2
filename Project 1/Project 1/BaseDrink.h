@@ -11,15 +11,15 @@
 
 @interface BaseDrink : NSObject
 {
- @private
-    int _drinkType;
+ 
     NSString *_drinkName;
-    bool ice;
+    bool _ice;
     int _time;
+
     
 }
 
 
--(void)setDrinkAtt:(int)drinkType drinkName:(NSString*)drinkName needsIce:(bool)needsIce time:(int)time;
+-(id)intDrinkAtt:(int)drinkType drinkName:(NSString*)drinkName needsIce:(bool)needsIce time:(int)time;
 
-@end
+;@end

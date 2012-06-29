@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseDrink.h"
+#import "BlendedDrink.h"
 
 @interface DrinkFactory : NSObject
 
-+(DrinkFactory*)createDrinks;
 
--(BaseDrink*)Getdrink:(int)drinkType;
+
+-(BaseDrink*)getDrink:(int)drinkType;
 @end

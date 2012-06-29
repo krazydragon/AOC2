@@ -11,14 +11,18 @@
 @implementation BaseDrink
 
 
--(void)setDrinkAtt:(int)drinkType drinkName:(NSString*)drinkName needsIce:(bool)needsIce time:(int)time
+-(id)init
 {
-    ice = needsIce;
-    _drinkName = drinkName;
-    _drinkType = drinkType;
-    _time = time;
-    
-    
+    if (self =  [super init])
+    {
+        _ice = NO;
+        _drinkName = @"Empty";
+        _time = 0;
+    }
+    return nil;
+   
 }
+
+
 
 @end

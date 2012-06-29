@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DrinkFactory.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad
 {
+    
     blendedDrinkLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 50.0f, 100.0f, 25.0f)];
     if (blendedDrinkLabel != nil)
     {
@@ -24,6 +26,12 @@
         blendedDrinkLabel.textAlignment = UITextAlignmentLeft;
         blendedDrinkLabel.textColor = [UIColor whiteColor];
         [self.view addSubview:blendedDrinkLabel];
+    }
+    DrinkFactory *drinkOne = [[DrinkFactory alloc] init];
+    if (drinkOne != nil) 
+    {
+        BaseDrink *blendedDrink = [drinkOne getDrink:0];
+        
     }
     blendedDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 50.0f, 220.0f, 25.0f)];
     if (blendedDrinkInfo != nil)

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseDrink.h"
+#import "DrinkFactory.h"
 
 @interface BlendedDrink : BaseDrink
 

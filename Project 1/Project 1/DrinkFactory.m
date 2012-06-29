@@ -7,39 +7,22 @@
 //
 
 #import "DrinkFactory.h"
+#import "BaseDrink.h"
+#import "BlendedDrink.h"
+
 
 @implementation DrinkFactory
 
-static DrinkFactory *_create = nil;
 
-+(DrinkFactory*)createDrinks
-{
-    if (_create) 
-    {
-        [[self alloc] init];
-        return _create;
-    }
-    return nil;
-}
 
-+(id)alloc
-{
-    _create =[super alloc];
-    return _create;
-}
 
--(id)init
-{
-    if (self = [super init])
-    {
-        
-    }
-    return self;
-}
--(BaseDrink*)Getdrink:(int)drinkType
+-(BaseDrink*)getDrink:(int)drinkType
 {
     if (drinkType == 0) {
         
+        [[BlendedDrink alloc] init];
+        
+        return nil;
     }
     else if (drinkType == 1) {
         

@@ -8,6 +8,7 @@
 
 #import "BlendedDrink.h"
 #import "BaseDrink.h"
+#import "DrinkFactory.h"
 
 @implementation BlendedDrink
 
@@ -15,7 +16,9 @@
 {
     if (self =  [super init])
     {
-        [self setDrinkAtt:0 drinkName:@"Blended" needsIce: YES time:5];
+         _drinkName = @"Blended";
+         _ice = YES ;
+         _time = 5;
     }
     return self;
 }
