@@ -15,9 +15,12 @@
 {
     if (self =  [super init])
     {
-        _drinkName = @"Cold";
-        _ice = YES;
-        _time = 1;
+        BaseDrink *name = [[BaseDrink alloc] init];
+        
+        [name changeDrink: @"Cold"];
+        [name changeIce: YES];
+        [name changeTime: 1];
+    
     }
     return self;
 }

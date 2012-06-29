@@ -23,6 +23,35 @@
    
 }
 
+-(void)changeIce:(bool)temp
+{
+    _ice = temp;
+}
+-(bool)getIce
+{
+    
+    return _ice;
+}
 
+
+-(void)changeDrink:(NSString*)temp
+{
+    _drinkName = temp;
+}
+-(NSString*)whichDrink
+{
+    
+    return _drinkName;
+}
+
+-(void)changeTime:(int)temp
+{
+    _time = temp;
+}
+-(int)howMuchTime
+{
+    
+    return _time;
+}
 
 @end

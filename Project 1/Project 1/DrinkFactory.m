@@ -9,6 +9,8 @@
 #import "DrinkFactory.h"
 #import "BaseDrink.h"
 #import "BlendedDrink.h"
+#import "HotDrink.h"
+#import "ColdDrink.h"
 
 
 @implementation DrinkFactory
@@ -26,10 +28,14 @@
     }
     else if (drinkType == 1) {
         
-    }
+        [[ColdDrink alloc] init];
+        
+        return nil;    }
     else if (drinkType == 2) {
         
-    }
+        [[HotDrink alloc] init];
+        
+        return nil;    }
     return nil;
 }
 

@@ -21,5 +21,9 @@
 
 
 -(id)intDrinkAtt:(int)drinkType drinkName:(NSString*)drinkName needsIce:(bool)needsIce time:(int)time;
+-(void)changeIce:(bool)temp;
+-(void)changeDrink:(NSString*)temp;
+-(void)changeTime:(int)temp;
+
 
 ;@end
