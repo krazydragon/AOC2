@@ -17,6 +17,7 @@
  UILabel *hotDrinkInfo;
  UILabel *coldDrinkLabel;
  UILabel *coldDrinkInfo;
+    NSString *tempString;
  }
 
 @end
