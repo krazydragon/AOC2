@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PcN-4j-D1I">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PcN-4j-D1I">
                                 <rect key="frame" x="37" y="128" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -26,6 +26,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="bpg-k8-4cO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IMu-ac-9cx">
                                 <rect key="frame" x="97" y="128" width="42" height="42"/>
@@ -38,6 +41,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="wMA-J1-tJ6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LkR-6t-2hA">
                                 <rect key="frame" x="155" y="128" width="42" height="42"/>
@@ -50,6 +56,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="jRI-PI-YuV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3PM-gz-isc">
                                 <rect key="frame" x="37" y="191" width="42" height="42"/>
@@ -62,6 +71,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="bob-66-0EF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ewQ-Ws-3bW">
                                 <rect key="frame" x="37" y="262" width="42" height="42"/>
@@ -74,6 +86,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="dMl-S9-zxe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UKt-yk-HiC">
                                 <rect key="frame" x="155" y="324" width="42" height="42"/>
@@ -86,6 +101,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="VGP-uq-rGV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6hf-cR-Z7t">
                                 <rect key="frame" x="155" y="262" width="42" height="42"/>
@@ -98,6 +116,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="UtG-OV-tOt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KUL-yf-cYB">
                                 <rect key="frame" x="97" y="191" width="42" height="42"/>
@@ -110,6 +131,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="Hsp-6z-wXp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J3x-Uw-KJX">
                                 <rect key="frame" x="97" y="262" width="42" height="42"/>
@@ -122,6 +146,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="S9k-cg-tV8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qGL-a9-FqG">
                                 <rect key="frame" x="37" y="324" width="102" height="42"/>
@@ -149,6 +176,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="q2E-1j-hTj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N5Q-2J-9cy">
                                 <rect key="frame" x="228" y="128" width="72" height="105"/>
@@ -161,6 +191,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="BOl-eg-YLt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QyJ-8M-SxD">
                                 <rect key="frame" x="228" y="262" width="72" height="166"/>
@@ -173,6 +206,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="2" eventType="touchUpInside" id="y10-wE-DEn"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Eo9-JU-H2F">
                                 <rect key="frame" x="37" y="20" width="79" height="27"/>
@@ -200,6 +236,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="button0" destination="qGL-a9-FqG" id="XGw-Jr-0yP"/>
+                        <outlet property="button1" destination="PcN-4j-D1I" id="eDo-0H-2VL"/>
+                        <outlet property="button2" destination="IMu-ac-9cx" id="gEU-qL-axA"/>
+                        <outlet property="button3" destination="LkR-6t-2hA" id="6q9-ys-6Vs"/>
+                        <outlet property="button4" destination="3PM-gz-isc" id="yPL-5P-d2Y"/>
+                        <outlet property="button5" destination="KUL-yf-cYB" id="dtY-Xp-XuT"/>
+                        <outlet property="button6" destination="qaj-I4-Ccx" id="GbL-0f-mBh"/>
+                        <outlet property="button7" destination="ewQ-Ws-3bW" id="Y1w-lQ-Hxm"/>
+                        <outlet property="button8" destination="J3x-Uw-KJX" id="BZi-86-1Nx"/>
+                        <outlet property="button9" destination="6hf-cR-Z7t" id="rZ5-1r-pRM"/>
+                        <outlet property="buttonAdd" destination="N5Q-2J-9cy" id="8dW-Lx-zuI"/>
+                        <outlet property="buttonClear" destination="UKt-yk-HiC" id="rpZ-iv-7ET"/>
+                        <outlet property="buttonEqual" destination="QyJ-8M-SxD" id="lkq-LC-0hE"/>
                         <outlet property="calcTextField" destination="qs3-Re-E9m" id="aXW-DZ-uHQ"/>
                     </connections>
                 </viewController>

@@ -59,6 +59,7 @@
     if (calcButton != nil)
     {
         
+        
         if (calcButton.tag == 0)
         {
             tempNum = tempNum * 10 + 0;
@@ -67,7 +68,53 @@
         {
             tempNum = tempNum * 10 + 1;
         }
+        else if (calcButton.tag == 2)
+        {
+            tempNum = tempNum * 10 + 2;
+        }
+        else if (calcButton.tag == 3)
+        {
+            tempNum = tempNum * 10 + 3;
+        }
+        else if (calcButton.tag == 4)
+        {
+            tempNum = tempNum * 10 + 4;
+        }
+        else if (calcButton.tag == 5)
+        {
+            tempNum = tempNum * 10 + 5;
+        }
+        else if (calcButton.tag == 6)
+        {
+            tempNum = tempNum * 10 + 6;
+        }
+        else if (calcButton.tag == 7)
+        {
+            tempNum = tempNum * 10 + 7;
+        }
+        else if (calcButton.tag == 8)
+        {
+            tempNum = tempNum * 10 + 8;
+        }
+        else if (calcButton.tag == 9)
+        {
+            tempNum = tempNum * 10 + 9;
+        }
+        else if (calcButton.tag == 10)
+        {
+            tempAdd = tempNum;
+            tempNum = 0;
+        }
+        else if (calcButton.tag == 11)
+        {
+            tempNum = tempNum + tempAdd;
+        }
+        else if (calcButton.tag == 12)
+        {
+            tempNum = 0;
             
+        }
+        
             }
     calcTextField.text = [[NSString alloc] initWithFormat:@"%d", tempNum];
 }
@@ -78,12 +125,38 @@
     {
         if (power.on == TRUE ) 
         {
-            //calcTextField.enabled = TRUE;
-            calcTextField.text = @"";
+            button0.enabled = TRUE;
+            button1.enabled = TRUE;
+            button2.enabled = TRUE;
+            button3.enabled = TRUE;
+            button4.enabled = TRUE;
+            button5.enabled = TRUE;
+            button6.enabled = TRUE;
+            button7.enabled = TRUE;
+            button8.enabled = TRUE;
+            button9.enabled = TRUE;
+            buttonAdd.enabled = TRUE;
+            buttonClear.enabled = TRUE;
+            buttonEqual.enabled = TRUE;
+            calcTextField.text = @"0";
+            tempNum = 0;
         }
         else if (power.on == FALSE ) 
         {
-            //calcTextField.enabled = FALSE;  
+            button0.enabled = FALSE;
+            button1.enabled = FALSE;
+            button2.enabled = FALSE;
+            button3.enabled = FALSE;
+            button4.enabled = FALSE;
+            button5.enabled = FALSE;
+            button6.enabled = FALSE;
+            button7.enabled = FALSE;
+            button8.enabled = FALSE;
+            button9.enabled = FALSE;
+            buttonAdd.enabled = FALSE;
+            buttonClear.enabled = FALSE;
+            buttonEqual.enabled = FALSE;
+            calcTextField.text = @"";
         }    
     }
 }

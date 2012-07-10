@@ -25,6 +25,7 @@
     IBOutlet UIButton *buttonEqual;
     IBOutlet UIButton *buttonClear;
     int tempNum;
+    int tempAdd;
     
 
 }
