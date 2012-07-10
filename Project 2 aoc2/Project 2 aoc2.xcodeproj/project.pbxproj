@@ -20,6 +20,8 @@
 		945E78DB15ABD6D100FC5398 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945E78BC15ABD6D100FC5398 /* Foundation.framework */; };
 		945E78E315ABD6D100FC5398 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 945E78E115ABD6D100FC5398 /* InfoPlist.strings */; };
 		945E78E615ABD6D100FC5398 /* Project_2_aoc2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945E78E515ABD6D100FC5398 /* Project_2_aoc2Tests.m */; };
+		945E78F015ABDA9100FC5398 /* infoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945E78EF15ABDA9100FC5398 /* infoViewController.xib */; };
+		945E790215ABDEFC00FC5398 /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945E790115ABDEFC00FC5398 /* infoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		945E78E215ABD6D100FC5398 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		945E78E415ABD6D100FC5398 /* Project_2_aoc2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project_2_aoc2Tests.h; sourceTree = "<group>"; };
 		945E78E515ABD6D100FC5398 /* Project_2_aoc2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project_2_aoc2Tests.m; sourceTree = "<group>"; };
+		945E78EF15ABDA9100FC5398 /* infoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoViewController.xib; sourceTree = "<group>"; };
+		945E790015ABDEFC00FC5398 /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
+		945E790115ABDEFC00FC5398 /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,9 @@
 				945E78CF15ABD6D100FC5398 /* ViewController.h */,
 				945E78D015ABD6D100FC5398 /* ViewController.m */,
 				945E78C115ABD6D100FC5398 /* Supporting Files */,
+				945E78EF15ABDA9100FC5398 /* infoViewController.xib */,
+				945E790015ABDEFC00FC5398 /* infoViewController.h */,
+				945E790115ABDEFC00FC5398 /* infoViewController.m */,
 			);
 			path = "Project 2 aoc2";
 			sourceTree = "<group>";
@@ -224,6 +232,7 @@
 			files = (
 				945E78C515ABD6D100FC5398 /* InfoPlist.strings in Resources */,
 				945E78CE15ABD6D100FC5398 /* MainStoryboard.storyboard in Resources */,
+				945E78F015ABDA9100FC5398 /* infoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 				945E78C715ABD6D100FC5398 /* main.m in Sources */,
 				945E78CB15ABD6D100FC5398 /* AppDelegate.m in Sources */,
 				945E78D115ABD6D100FC5398 /* ViewController.m in Sources */,
+				945E790215ABDEFC00FC5398 /* infoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
