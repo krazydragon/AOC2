@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad
 {
+    tempNum = 0;
     UIButton *infoButton =[UIButton buttonWithType:UIButtonTypeInfoDark];
     if (infoButton != nil)
     {
@@ -51,5 +52,39 @@
     }
 
 }
-
+-(IBAction)onClick:(id)sender
+{
+    
+    UIButton *calcButton = (UIButton*)sender;
+    if (calcButton != nil)
+    {
+        
+        if (calcButton.tag == 0)
+        {
+            tempNum = tempNum * 10 + 0;
+        }
+        else if (calcButton.tag == 1)
+        {
+            tempNum = tempNum * 10 + 1;
+        }
+            
+            }
+    calcTextField.text = [[NSString alloc] initWithFormat:@"%d", tempNum];
+}
+-(IBAction)calcPower:(id)sender
+{
+    UISwitch *power = (UISwitch*)sender;
+    if (power != nil)
+    {
+        if (power.on == TRUE ) 
+        {
+            //calcTextField.enabled = TRUE;
+            calcTextField.text = @"";
+        }
+        else if (power.on == FALSE ) 
+        {
+            //calcTextField.enabled = FALSE;  
+        }    
+    }
+}
 @end
