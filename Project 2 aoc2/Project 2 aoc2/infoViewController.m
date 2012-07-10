@@ -39,7 +39,7 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+//Used to dismis info screen
 -(IBAction)onBack:(id)sender
 {
     [self dismissModalViewControllerAnimated:TRUE];

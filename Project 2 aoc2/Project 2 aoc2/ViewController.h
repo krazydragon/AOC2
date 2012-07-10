@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 {
+    
     IBOutlet UITextField *calcTextField;
     IBOutlet UIButton *button0;
     IBOutlet UIButton *button1;
@@ -24,6 +25,7 @@
     IBOutlet UIButton *buttonAdd;
     IBOutlet UIButton *buttonEqual;
     IBOutlet UIButton *buttonClear;
+    //Temp numbers used to make calc work
     int tempNum;
     int tempAdd;
     
@@ -32,5 +34,6 @@
 
 -(IBAction)calcPower:(id)sender;
 -(IBAction)onClick:(id)sender;
+-(IBAction)changeColor:(id)sender;
 
 @end

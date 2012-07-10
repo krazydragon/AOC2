@@ -18,10 +18,11 @@
 - (void)viewDidLoad
 {
     tempNum = 0;
+    //Create info button
     UIButton *infoButton =[UIButton buttonWithType:UIButtonTypeInfoDark];
     if (infoButton != nil)
     {
-        infoButton.frame = CGRectMake(0.0f, 375.0f, 25.0f, 25.0f);
+        infoButton.frame = CGRectMake(280.0f, 25.0f, 25.0f, 25.0f);
         infoButton.tag = 0;
         [infoButton addTarget:self action:@selector(infoClick:) forControlEvents:(UIControlEventTouchUpInside)];
         
@@ -52,6 +53,8 @@
     }
 
 }
+
+//This makes it so that calc buttons work and info is displayed on the screen.
 -(IBAction)onClick:(id)sender
 {
     
@@ -112,12 +115,15 @@
         else if (calcButton.tag == 12)
         {
             tempNum = 0;
+            tempAdd = 0;
             
         }
         
             }
     calcTextField.text = [[NSString alloc] initWithFormat:@"%d", tempNum];
 }
+
+//This is the on/off button that "powers" the calc
 -(IBAction)calcPower:(id)sender
 {
     UISwitch *power = (UISwitch*)sender;
@@ -160,4 +166,27 @@
         }    
     }
 }
+
+//This makes it so that the user can change the background color
+-(IBAction)changeColor:(id)sender;
+{
+    UISegmentedControl *colorChanger = (UISegmentedControl*)sender;
+    if (colorChanger != nil)
+    {
+        int colorIndex = colorChanger.selectedSegmentIndex;
+        if (colorIndex == 0)
+        {
+           self.view.backgroundColor = [UIColor whiteColor]; 
+        }
+        else if(colorIndex == 1) 
+        {
+            self.view.backgroundColor = [UIColor blueColor]; 
+        }
+        else if(colorIndex == 2) 
+        {
+            self.view.backgroundColor = [UIColor greenColor]; 
+        }
+    }
+}
+
 @end
