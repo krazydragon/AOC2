@@ -7,20 +7,23 @@
 //
 
 #import "BaseDrink.h"
+#import "ViewController.h"
 
 
 @implementation BaseDrink
 
 
+
 -(id)init
 {
-    if (self =  [super init])
+    self =  [super init];
+    if (self != nil)
     {
         _ice = NO;
         _drinkName = @"Empty";
         _time = 0;
     }
-    return nil;
+    return self;
    
 }
 

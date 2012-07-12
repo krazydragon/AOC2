@@ -9,11 +9,13 @@
 #import "HotDrink.h"
 #import "BaseDrink.h"
 
+
 @implementation HotDrink
 
 -(id)init
 {
-    if (self =  [super init])
+    self =  [super init];
+    if (self != nil)
     {
         
         BaseDrink *hot = [[BaseDrink alloc] init];

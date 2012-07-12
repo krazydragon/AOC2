@@ -22,21 +22,21 @@
 {
     if (drinkType == 0) {
         
-        [[BlendedDrink alloc] init];
         
-        return [[BaseDrink alloc] init];
+        
+        return [[BlendedDrink alloc] init];
     }
     else if (drinkType == 1) {
         
-        [[ColdDrink alloc] init];
         
-        return [[BaseDrink alloc] init];
+        
+        return [[ColdDrink alloc] init];
     }
     else if (drinkType == 2) {
         
-        [[HotDrink alloc] init];
         
-        return [[BaseDrink alloc] init];
+        
+        return [[HotDrink alloc] init];
     }
     return nil;
 }

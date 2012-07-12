@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseDrink.h"
+#import "HotDrink.h"
 
 @interface HotDrink : BaseDrink
-
+{
+    
+}
 @end

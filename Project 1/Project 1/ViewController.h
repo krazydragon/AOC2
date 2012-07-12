@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DrinkFactory.h"
+#import "HotDrink.h"
 
 @interface ViewController : UIViewController
 {
@@ -18,6 +19,8 @@
  UILabel *coldDrinkLabel;
  UILabel *coldDrinkInfo;
     NSString *tempString;
+    BaseDrink *blendedDrink;
+    BaseDrink *coldDrink;
  }
 
 @end

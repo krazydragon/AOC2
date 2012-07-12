@@ -11,6 +11,7 @@
 
 @interface BaseDrink : NSObject
 {
+
  @protected
     NSString *_drinkName;
     bool _ice;

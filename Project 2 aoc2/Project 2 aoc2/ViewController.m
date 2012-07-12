@@ -146,6 +146,7 @@
             buttonEqual.enabled = TRUE;
             calcTextField.text = @"0";
             tempNum = 0;
+            tempAdd = 0;
         }
         else if (power.on == FALSE ) 
         {

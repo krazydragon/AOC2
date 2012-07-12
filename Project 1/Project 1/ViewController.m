@@ -33,7 +33,7 @@
     if (drinkOne != nil) 
     {
         
-        BaseDrink *blendedDrink = [drinkOne getDrink:0];
+        blendedDrink = [drinkOne getDrink:0];
         
         tempString = [NSString stringWithFormat:@"You have a %@ drink. It will take %d minutes to make.", [blendedDrink whichDrink],[blendedDrink howMuchTime]];
         
@@ -68,21 +68,21 @@
         BaseDrink *hotDrink = [drinkTwo getDrink:1];
         
         tempString = [NSString stringWithFormat:@"You have a %@ drink. It will take %d minutes to make.", [hotDrink whichDrink],[hotDrink howMuchTime]];
-        
+        hotDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 125.0f, 220.0f, 50.0f)];
+        if (hotDrinkInfo != nil)
+        {
+            hotDrinkInfo.backgroundColor = [UIColor blackColor];
+            hotDrinkInfo.textAlignment = UITextAlignmentLeft;
+            hotDrinkInfo.textColor = [UIColor whiteColor];
+            hotDrinkInfo.numberOfLines = 2;
+            hotDrinkInfo.text = tempString;
+            [self.view addSubview:hotDrinkInfo];
+        }
         
         
         
     }
-    hotDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 125.0f, 220.0f, 50.0f)];
-    if (hotDrinkInfo != nil)
-    {
-        hotDrinkInfo.backgroundColor = [UIColor blackColor];
-        hotDrinkInfo.textAlignment = UITextAlignmentLeft;
-        hotDrinkInfo.textColor = [UIColor whiteColor];
-        hotDrinkInfo.numberOfLines = 2;
-        hotDrinkInfo.text = tempString;
-        [self.view addSubview:hotDrinkInfo];
-    }
+    
     //create cold drink label and text
     coldDrinkLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 200.0f, 100.0f, 25.0f)];
     if (coldDrinkLabel != nil)
@@ -97,7 +97,7 @@
     if (drinkOne != nil) 
     {
         
-        BaseDrink *coldDrink = [drinkThree getDrink:2];
+        coldDrink = [drinkThree getDrink:2];
         
         tempString = [NSString stringWithFormat:@"You have a %@ drink. It will take %d minutes to make.", [coldDrink whichDrink],[coldDrink howMuchTime]];
         
