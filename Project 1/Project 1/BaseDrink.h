@@ -21,7 +21,7 @@
 }
 
 
-
+//Functions to change and retrive different drink varibles 
 -(void)changeIce:(bool)temp;
 -(void)changeDrink:(NSString*)temp;
 -(void)changeTime:(int)temp;

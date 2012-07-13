@@ -17,11 +17,9 @@
     self =  [super init];
     if (self != nil)
     {
-        BaseDrink *blended = [[BaseDrink alloc] init];
-        
-        [blended changeDrink: @"Blended"];
-        [blended changeIce : YES];
-        [blended changeTime : 5];
+        [self changeDrink: @"Blended"];
+        [self changeIce : YES];
+        [self changeTime : 5];
     }
     return self;
 }

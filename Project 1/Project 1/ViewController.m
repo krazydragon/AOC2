@@ -36,22 +36,21 @@
         blendedDrink = [drinkOne getDrink:0];
         
         tempString = [NSString stringWithFormat:@"You have a %@ drink. It will take %d minutes to make.", [blendedDrink whichDrink],[blendedDrink howMuchTime]];
-        
+        blendedDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 50.0f, 220.0f, 50.0f)];
+        if (blendedDrinkInfo != nil)
+        {
+            blendedDrinkInfo.backgroundColor = [UIColor blackColor];
+            blendedDrinkInfo.textAlignment = UITextAlignmentLeft;
+            blendedDrinkInfo.textColor = [UIColor whiteColor];
+            blendedDrinkInfo.numberOfLines = 2;
+            blendedDrinkInfo.text = tempString;
+            [self.view addSubview:blendedDrinkInfo];
+        }
         
         
         
     }
-    blendedDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 50.0f, 220.0f, 50.0f)];
-    if (blendedDrinkInfo != nil)
-    {
-        blendedDrinkInfo.backgroundColor = [UIColor blackColor];
-        blendedDrinkInfo.textAlignment = UITextAlignmentLeft;
-        blendedDrinkInfo.textColor = [UIColor whiteColor];
-        blendedDrinkInfo.numberOfLines = 2;
-        blendedDrinkInfo.text = tempString;
-        [self.view addSubview:blendedDrinkInfo];
-    }
-    //create hot drink label and text
+        //create hot drink label and text
     hotDrinkLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 125.0f, 100.0f, 25.0f)];
     if (hotDrinkLabel != nil)
     {
@@ -62,7 +61,7 @@
         [self.view addSubview:hotDrinkLabel];
     }
     DrinkFactory *drinkTwo = [[DrinkFactory alloc] init];
-    if (drinkOne != nil) 
+    if (drinkTwo != nil) 
     {
         
         BaseDrink *hotDrink = [drinkTwo getDrink:1];
@@ -94,31 +93,31 @@
         [self.view addSubview:coldDrinkLabel];
     }
     DrinkFactory *drinkThree = [[DrinkFactory alloc] init];
-    if (drinkOne != nil) 
+    if (drinkThree != nil) 
     {
         
         coldDrink = [drinkThree getDrink:2];
         
         tempString = [NSString stringWithFormat:@"You have a %@ drink. It will take %d minutes to make.", [coldDrink whichDrink],[coldDrink howMuchTime]];
-        
-        
-        
-        
+        coldDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 200.0f, 220.0f, 50.0f)];
+        if (coldDrinkInfo != nil)
+        {
+            coldDrinkInfo.backgroundColor = [UIColor blackColor];
+            coldDrinkInfo.textAlignment = UITextAlignmentLeft;
+            coldDrinkInfo.textColor = [UIColor whiteColor];
+            coldDrinkInfo.numberOfLines = 2;
+            coldDrinkInfo.text = tempString;
+            [self.view addSubview:coldDrinkInfo];
+        }
+        [super viewDidLoad];
+        // Do any additional setup after loading the view, typically from a nib.
     }
-    coldDrinkInfo = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 200.0f, 220.0f, 50.0f)];
-    if (coldDrinkInfo != nil)
-    {
-        coldDrinkInfo.backgroundColor = [UIColor blackColor];
-        coldDrinkInfo.textAlignment = UITextAlignmentLeft;
-        coldDrinkInfo.textColor = [UIColor whiteColor];
-        coldDrinkInfo.numberOfLines = 2;
-        coldDrinkInfo.text = tempString;
-        [self.view addSubview:coldDrinkInfo];
-    }
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
+        
+        
+        
+    }
+    
 - (void)viewDidUnload
 {
     [super viewDidUnload];

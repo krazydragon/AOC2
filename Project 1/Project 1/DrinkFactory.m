@@ -17,7 +17,7 @@
 
 
 
-
+// Determine what kind of drink to make
 -(BaseDrink*)getDrink:(int)drinkType
 {
     if (drinkType == 0) {
