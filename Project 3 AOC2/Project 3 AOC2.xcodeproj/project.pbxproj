@@ -20,6 +20,8 @@
 		9441F75C15B4956700D8ADD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9441F73D15B4956700D8ADD9 /* Foundation.framework */; };
 		9441F76415B4956700D8ADD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9441F76215B4956700D8ADD9 /* InfoPlist.strings */; };
 		9441F76715B4956700D8ADD9 /* Project_3_AOC2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9441F76615B4956700D8ADD9 /* Project_3_AOC2Tests.m */; };
+		9441F77115B6059600D8ADD9 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9441F77015B6059600D8ADD9 /* EventViewController.xib */; };
+		9441F77415B6284900D8ADD9 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9441F77315B6284900D8ADD9 /* EventViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		9441F76315B4956700D8ADD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9441F76515B4956700D8ADD9 /* Project_3_AOC2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project_3_AOC2Tests.h; sourceTree = "<group>"; };
 		9441F76615B4956700D8ADD9 /* Project_3_AOC2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project_3_AOC2Tests.m; sourceTree = "<group>"; };
+		9441F77015B6059600D8ADD9 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
+		9441F77215B6284900D8ADD9 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = EventViewController.h; sourceTree = "<group>"; };
+		9441F77315B6284900D8ADD9 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,9 @@
 				9441F75015B4956700D8ADD9 /* ViewController.h */,
 				9441F75115B4956700D8ADD9 /* ViewController.m */,
 				9441F74215B4956700D8ADD9 /* Supporting Files */,
+				9441F77015B6059600D8ADD9 /* EventViewController.xib */,
+				9441F77215B6284900D8ADD9 /* EventViewController.h */,
+				9441F77315B6284900D8ADD9 /* EventViewController.m */,
 			);
 			path = "Project 3 AOC2";
 			sourceTree = "<group>";
@@ -224,6 +232,7 @@
 			files = (
 				9441F74615B4956700D8ADD9 /* InfoPlist.strings in Resources */,
 				9441F74F15B4956700D8ADD9 /* MainStoryboard.storyboard in Resources */,
+				9441F77115B6059600D8ADD9 /* EventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 				9441F74815B4956700D8ADD9 /* main.m in Sources */,
 				9441F74C15B4956700D8ADD9 /* AppDelegate.m in Sources */,
 				9441F75215B4956700D8ADD9 /* ViewController.m in Sources */,
+				9441F77415B6284900D8ADD9 /* EventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +438,7 @@
 				9441F76C15B4956700D8ADD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9441F76D15B4956700D8ADD9 /* Build configuration list for PBXNativeTarget "Project 3 AOC2Tests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +447,7 @@
 				9441F76F15B4956700D8ADD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

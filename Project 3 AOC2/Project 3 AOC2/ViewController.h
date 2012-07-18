@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    
+}
+
+-(IBAction)onClick:(id)sender;
+
 
 @end

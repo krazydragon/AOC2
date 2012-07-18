@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EventViewController.h"
 
 @interface ViewController ()
 
@@ -29,6 +30,16 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+-(IBAction)onClick:(id)sender
+{
+    EventViewController *dateController = [[EventViewController alloc] initWithNibName:@"EventViewController" bundle:nil];
+    
+    if (dateController != nil)
+    {
+        [self presentModalViewController:dateController animated:TRUE]; 
+    }    
 }
 
 @end
