@@ -13,5 +13,6 @@
     IBOutlet UITextField *eventTextField;
     IBOutlet UIDatePicker *eventDate;
 }
-
+-(IBAction)onClick:(id)sender;
+-(IBAction)onChange:(id)sender;
 @end

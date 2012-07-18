@@ -25,6 +25,9 @@
 
 - (void)viewDidLoad
 {
+    //set current date and local timezone
+    eventDate.timeZone = [NSTimeZone localTimeZone];
+    [eventDate setDate:[NSDate date]];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -53,6 +56,11 @@
             [eventTextField resignFirstResponder];
         }
     }
-        
+}     
+-(IBAction)onChange:(id)sender
+{
+
 }
+    
+
 @end
