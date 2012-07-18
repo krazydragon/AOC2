@@ -26,8 +26,8 @@
 - (void)viewDidLoad
 {
     //set current date and local timezone
-    eventDate.timeZone = [NSTimeZone localTimeZone];
-    [eventDate setDate:[NSDate date]];
+    eventDatePicker.timeZone = [NSTimeZone localTimeZone];
+    [eventDatePicker setDate:[NSDate date]];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -49,6 +49,14 @@
     {
         if (eventButton.tag == 0)
         {
+            NSDateFormatter *formattedDate = [[NSDateFormatter alloc] init];
+            if (formattedDate != nil) {
+                [formattedDate setDateFormat:@"EEE, MMMM d yyyy hh:mm aaa"];
+                tempDate = [formattedDate stringFromDate:eventDate];
+                
+            }
+            NSString *tempString = [[NSString alloc] initWithFormat:@"\n Add Event:%@ \n %@ \n",eventTextField.text,tempDate];
+            NSLog(@"%@",tempString);
             [self dismissModalViewControllerAnimated:TRUE];
         }
         else if (eventButton.tag == 1)
@@ -59,7 +67,11 @@
 }     
 -(IBAction)onChange:(id)sender
 {
-
+    UIDatePicker *datePicker = (UIDatePicker*)sender;
+    if (datePicker !=nil)
+    {
+        eventDate = datePicker.date;
+    }
 }
     
 

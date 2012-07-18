@@ -11,7 +11,9 @@
 @interface EventViewController : UIViewController
 {
     IBOutlet UITextField *eventTextField;
-    IBOutlet UIDatePicker *eventDate;
+    IBOutlet UIDatePicker *eventDatePicker;
+    NSDate *eventDate;
+    NSString *tempDate;
 }
 -(IBAction)onClick:(id)sender;
 -(IBAction)onChange:(id)sender;
