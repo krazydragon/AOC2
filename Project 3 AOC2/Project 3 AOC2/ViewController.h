@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventViewController.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<saveEvent>
 {
+    IBOutlet UITextView *eventView;
+    NSString *eventDetails;
     
 }
 
-;
+- (IBAction)onClick:(id)sender;
 
 
 @end

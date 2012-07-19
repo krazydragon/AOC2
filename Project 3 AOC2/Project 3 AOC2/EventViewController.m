@@ -7,13 +7,15 @@
 //
 
 #import "EventViewController.h"
-#import "ViewController.h"
+
 
 @interface EventViewController ()
 
 @end
 
 @implementation EventViewController
+
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -58,7 +60,13 @@
             }
             NSString *tempString = [[NSString alloc] initWithFormat:@"\n Add Event:%@ \n %@ \n",eventTextField.text,tempDate];
             NSLog(@"%@",tempString);
+            
+            if (delegate != nil)
+            {
+                [delegate showEvent:tempString];
+            }
             [self dismissModalViewControllerAnimated:TRUE];
+            
         }
         else if (eventButton.tag == 1)
         {

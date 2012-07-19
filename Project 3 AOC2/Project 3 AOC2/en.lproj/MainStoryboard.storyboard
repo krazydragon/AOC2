@@ -34,7 +34,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3pi-XI-EGR" kind="modal" id="MBe-lt-3cl"/>
+                                    <action selector="onClick:" destination="4" eventType="touchUpInside" id="ssr-rJ-98n"/>
+                                    <segue destination="3pi-XI-EGR" kind="push" id="8vj-vo-27d"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="aqz-WV-geB">
@@ -48,6 +49,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Svg-RV-QFv"/>
+                    <connections>
+                        <outlet property="eventView" destination="aqz-WV-geB" id="fvI-Hd-xnS"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-464" y="85"/>
@@ -67,12 +71,9 @@
                                 <date key="date" timeIntervalSinceReferenceDate="364250537.770702">
                                     <!--2012-07-17 20:42:17 +0000-->
                                 </date>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="364212000">
-                                    <!--2012-07-17 10:00:00 +0000-->
-                                </date>
                                 <locale key="locale" localeIdentifier="en_US"/>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
-                                    <mutableData key="data">
+                                    <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -90,10 +91,10 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                 </timeZone>
                                 <connections>
-                                    <action selector="onChange:" destination="wu6-ZP-UX7" eventType="touchDragInside" id="Pjd-iz-o9z"/>
+                                    <action selector="onChange:" destination="wu6-ZP-UX7" eventType="valueChanged" id="Svf-sk-cFd"/>
                                 </connections>
                             </datePicker>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="sId-bC-Zyg">
@@ -130,7 +131,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </state>
                                 <connections>
                                     <action selector="onClick:" destination="wu6-ZP-UX7" eventType="touchUpInside" id="6uS-qb-g8m"/>
-                                    <segue destination="2" kind="push" id="Gps-c6-sVO"/>
+                                    <segue destination="2" kind="modal" identifier="Back2FirstView" modalTransitionStyle="coverVertical" id="Gps-c6-sVO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Event" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="eLA-WC-yb8">
@@ -151,7 +152,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="eventDatePicker" destination="bz1-pW-bMi" id="NRO-F7-fhX"/>
+                        <outlet property="eventDatePicker" destination="bz1-pW-bMi" id="wDJ-Eh-93u"/>
                         <outlet property="eventTextField" destination="sId-bC-Zyg" id="Zea-Yb-4fo"/>
                     </connections>
                 </viewController>
@@ -172,7 +173,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="addEvent:"/>
+                <relationship kind="action" name="onClick:"/>
+                <relationship kind="outlet" name="eventView" candidateClass="UITextView"/>
             </relationships>
         </class>
     </classes>
