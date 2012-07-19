@@ -7,6 +7,7 @@
 //
 
 #import "EventViewController.h"
+#import "ViewController.h"
 
 @interface EventViewController ()
 
@@ -27,7 +28,7 @@
 {
     //set current date and local timezone
     eventDatePicker.timeZone = [NSTimeZone localTimeZone];
-    [eventDatePicker setDate:[NSDate date]];
+    [eventDatePicker setMinimumDate:[NSDate date]];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

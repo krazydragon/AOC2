@@ -32,14 +32,6 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
--(IBAction)onClick:(id)sender
-{
-    EventViewController *dateController = [[EventViewController alloc] initWithNibName:@"EventViewController" bundle:nil];
-    
-    if (dateController != nil)
-    {
-        [self presentModalViewController:dateController animated:TRUE]; 
-    }    
-}
+
 
 @end
