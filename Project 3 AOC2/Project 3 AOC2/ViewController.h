@@ -13,11 +13,11 @@
 @interface ViewController : UIViewController<saveEvent>
 {
     IBOutlet UITextView *eventView;
-    NSString *eventDetails;
+    NSMutableString *eventDetails;
     
 }
 
-- (IBAction)onClick:(id)sender;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
 
 @end

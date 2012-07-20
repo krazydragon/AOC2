@@ -52,28 +52,51 @@
     {
         if (eventButton.tag == 0)
         {
+             
+            //setup date format
             NSDateFormatter *formattedDate = [[NSDateFormatter alloc] init];
             if (formattedDate != nil) {
                 [formattedDate setDateFormat:@"EEE, MMMM d yyyy hh:mm aaa"];
                 tempDate = [formattedDate stringFromDate:eventDate];
                 
-            }
-            NSString *tempString = [[NSString alloc] initWithFormat:@"\n Add Event:%@ \n %@ \n",eventTextField.text,tempDate];
-            NSLog(@"%@",tempString);
-            
-            if (delegate != nil)
+                
+            } 
+            NSString *tempStr = @"Please select a date!";
+            //make sure that user has selected a date
+            if (tempDate == nil)
             {
-                [delegate showEvent:tempString];
+                UIAlertView *displayString = [[UIAlertView alloc] initWithTitle:@"Error" message:tempStr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                if (displayString != nil)
+                {
+                    [displayString show];
+                }
             }
-            [self dismissModalViewControllerAnimated:TRUE];
+            else
+            {
+                
+                //setting up transport of data between views sending as string
+                NSString *tempString = [[NSString alloc] initWithFormat:@"\n Add Event:%@ \n %@ \n",eventTextField.text,tempDate];  
+                NSLog(@"%@",tempString);
+                if (delegate != nil)
+                {
+                    [delegate showEvent:tempString];
+                }
+                [self dismissModalViewControllerAnimated:TRUE];
+
+            }
+            
+                        
             
         }
         else if (eventButton.tag == 1)
+        //dismiss keyboard
         {
             [eventTextField resignFirstResponder];
         }
     }
 }     
+
+//capture date picker info
 -(IBAction)onChange:(id)sender
 {
     UIDatePicker *datePicker = (UIDatePicker*)sender;

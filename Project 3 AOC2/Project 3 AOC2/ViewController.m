@@ -19,9 +19,9 @@
 
 - (void)viewDidLoad
 {
-    eventView.text = @"does this work?";
-    NSLog(@"%@", eventDetails);
-        
+    
+    //setup blank holder for event text 
+    eventDetails = [[NSMutableString alloc] initWithString:@""];   
     
   
     [super viewDidLoad];
@@ -33,18 +33,22 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
+//display saved event and date information
 -(void)showEvent:(NSString *)eventString
 {
-     NSMutableString *evenTemp = [[NSMutableString alloc] initWithString: eventView.text];
-    [evenTemp appendString: eventString];
-    eventView.text = evenTemp;
+    
+    [eventDetails appendString: eventString];
+    eventView.text = eventDetails;
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-- (IBAction)onClick:(id)sender
+
+//setup add event view
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //connect the two views togeather with the use of a delegate
     EventViewController *event = [[EventViewController alloc] initWithNibName:@"EventViewController" bundle:nil];
     if (event != nil)
     {
