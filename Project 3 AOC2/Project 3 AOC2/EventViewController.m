@@ -76,7 +76,7 @@
                 
                 //setting up transport of data between views sending as string
                 NSString *tempString = [[NSString alloc] initWithFormat:@"\n Add Event:%@ \n %@ \n",eventTextField.text,tempDate];  
-                NSLog(@"%@",tempString);
+                
                 if (delegate != nil)
                 {
                     [delegate showEvent:tempString];
