@@ -160,6 +160,23 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="114" y="107"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="EventViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onChange:"/>
+                <relationship kind="action" name="onClick:"/>
+                <relationship kind="outlet" name="eventDatePicker" candidateClass="UIDatePicker"/>
+                <relationship kind="outlet" name="eventTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="eventView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
