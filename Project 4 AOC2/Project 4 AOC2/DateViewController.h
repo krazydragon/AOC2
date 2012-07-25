@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol saveEvent <NSObject>
+@required
+-(void)showEvent:(NSString*)eventString;
+
+@end
 
 @interface DateViewController : UIViewController
+{
+    IBOutlet UITextField *eventTextField;
+    IBOutlet UIDatePicker *eventDatePicker;
+    NSDate *eventDate;
+    NSString *tempDate;
+    id<saveEvent> delegate;
+    
+}
+
+@property (strong) id<saveEvent> delegate;
+-(IBAction)onClick:(id)sender;
+-(IBAction)onChange:(id)sender;
 
 @end

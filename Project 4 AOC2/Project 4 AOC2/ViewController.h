@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DateViewController.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<saveEvent>
+{
+    IBOutlet UITextView *eventView;
+    NSMutableString *eventDetails;
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
+
 
 @end

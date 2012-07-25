@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad
 {
+    //setup blank holder for event text 
+    eventDetails = [[NSMutableString alloc] initWithString:@""]; 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -31,4 +33,23 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+
+//display saved event and date information
+-(void)showEvent:(NSString *)eventString
+{
+    
+    [eventDetails appendString: eventString];
+    eventView.text = eventDetails;
+}
+
+//setup add event view
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //connect the two views togeather with the use of a delegate
+    DateViewController *event = [segue destinationViewController];
+    if (event != nil)
+    {
+        event.delegate = self;
+            }
+}
 @end

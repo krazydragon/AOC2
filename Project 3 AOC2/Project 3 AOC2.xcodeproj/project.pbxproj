@@ -21,6 +21,7 @@
 		9441F76415B4956700D8ADD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9441F76215B4956700D8ADD9 /* InfoPlist.strings */; };
 		9441F76715B4956700D8ADD9 /* Project_3_AOC2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9441F76615B4956700D8ADD9 /* Project_3_AOC2Tests.m */; };
 		9441F77415B6284900D8ADD9 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9441F77315B6284900D8ADD9 /* EventViewController.m */; };
+		94864FE115BF8F690087A22B /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94864FE015BF8F690087A22B /* EventViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		9441F76615B4956700D8ADD9 /* Project_3_AOC2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project_3_AOC2Tests.m; sourceTree = "<group>"; };
 		9441F77215B6284900D8ADD9 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
 		9441F77315B6284900D8ADD9 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		94864FE015BF8F690087A22B /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				9441F74215B4956700D8ADD9 /* Supporting Files */,
 				9441F77215B6284900D8ADD9 /* EventViewController.h */,
 				9441F77315B6284900D8ADD9 /* EventViewController.m */,
+				94864FE015BF8F690087A22B /* EventViewController.xib */,
 			);
 			path = "Project 3 AOC2";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				9441F74615B4956700D8ADD9 /* InfoPlist.strings in Resources */,
 				9441F74F15B4956700D8ADD9 /* MainStoryboard.storyboard in Resources */,
+				94864FE115BF8F690087A22B /* EventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
