@@ -15,7 +15,6 @@
 
 @interface DateViewController : UIViewController
 {
-    IBOutlet UIView *dateView;
     IBOutlet UILabel *saveEvent;
     IBOutlet UITextField *eventTextField;
     IBOutlet UIDatePicker *eventDatePicker;

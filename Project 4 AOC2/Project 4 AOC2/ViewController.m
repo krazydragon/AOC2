@@ -17,6 +17,11 @@
 
 - (void)viewDidLoad
 {
+    NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
+    if (savedEvents != nil) 
+    {
+        eventDetails = [[NSMutableString alloc] initWithString:[savedEvents objectForKey:@"details"]];
+    }
     if (eventDetails != nil)
     {
         eventView.text = eventDetails;
@@ -43,7 +48,7 @@
     
     
     [eventDetails appendString: eventString];
-    NSLog(@"%@",eventDetails);
+    
     eventView.text = eventDetails;
     }
 
@@ -60,6 +65,7 @@
             //setup blank holder for event text 
             eventView.text = @"";
             eventDetails = [[NSMutableString alloc] initWithString:@""];
+            
         }
     }
   
@@ -67,6 +73,12 @@
 }
 -(IBAction)onClick:(id)sender
 {
-    
+    NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
+    if (savedEvents != nil)
+    {
+        [savedEvents setObject:eventDetails forKey:@"details"];
+        [savedEvents synchronize];
+        
+    }
 }
 @end

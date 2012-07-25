@@ -76,10 +76,11 @@
         
         
     } 
-    NSString *tempStr = @"Please select a date!";
+    
     //make sure that user has selected a date
     if ((tempDate == nil) || ([eventTextField.text isEqualToString:@""]))
     {
+        NSString *tempStr = @"Please verify that an event is entered and a date is selected!";
         UIAlertView *displayString = [[UIAlertView alloc] initWithTitle:@"Error" message:tempStr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         if (displayString != nil)
         {
