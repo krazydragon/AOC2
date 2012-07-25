@@ -15,12 +15,14 @@
 
 @interface DateViewController : UIViewController
 {
+    IBOutlet UIView *dateView;
+    IBOutlet UILabel *saveEvent;
     IBOutlet UITextField *eventTextField;
     IBOutlet UIDatePicker *eventDatePicker;
     NSDate *eventDate;
     NSString *tempDate;
     id<saveEvent> delegate;
-    
+    UISwipeGestureRecognizer *leftSwiper;
 }
 
 @property (strong) id<saveEvent> delegate;

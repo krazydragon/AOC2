@@ -13,11 +13,14 @@
 @end
 
 @implementation ViewController
+@synthesize eventDetails;
 
 - (void)viewDidLoad
 {
-    //setup blank holder for event text 
-    eventDetails = [[NSMutableString alloc] initWithString:@""]; 
+    if (eventDetails != nil)
+    {
+        eventView.text = eventDetails;
+    } 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -38,9 +41,11 @@
 -(void)showEvent:(NSString *)eventString
 {
     
+    
     [eventDetails appendString: eventString];
+    NSLog(@"%@",eventDetails);
     eventView.text = eventDetails;
-}
+    }
 
 //setup add event view
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -50,6 +55,18 @@
     if (event != nil)
     {
         event.delegate = self;
-            }
+        if ([eventView.text isEqualToString:@"Please add an event by pressing the button."]) 
+        {
+            //setup blank holder for event text 
+            eventView.text = @"";
+            eventDetails = [[NSMutableString alloc] initWithString:@""];
+        }
+    }
+  
+
+}
+-(IBAction)onClick:(id)sender
+{
+    
 }
 @end

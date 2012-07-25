@@ -18,6 +18,7 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
+-(IBAction)onClick:(id)sender;
 
-
+@property (nonatomic, retain)NSMutableString *eventDetails;
 @end
