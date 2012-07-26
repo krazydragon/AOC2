@@ -17,8 +17,10 @@
 
 - (void)viewDidLoad
 {
-    NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
-    if (savedEvents != nil) 
+    
+    //check to see if there is any saved info and dispay it.
+    savedEvents = [NSUserDefaults standardUserDefaults];
+    if ([savedEvents objectForKey:@"details"] != nil) 
     {
         eventDetails = [[NSMutableString alloc] initWithString:[savedEvents objectForKey:@"details"]];
     }
@@ -45,8 +47,6 @@
 //display saved event and date information
 -(void)showEvent:(NSString *)eventString
 {
-    
-    
     [eventDetails appendString: eventString];
     
     eventView.text = eventDetails;
@@ -60,7 +60,8 @@
     if (event != nil)
     {
         event.delegate = self;
-        if ([eventView.text isEqualToString:@"Please add an event by pressing the button."]) 
+        //replace default text with user text
+        if ([eventView.text isEqualToString:@"Please add an event by swiping right on the bottom of the screen."]) 
         {
             //setup blank holder for event text 
             eventView.text = @"";
@@ -71,14 +72,18 @@
   
 
 }
+//save user info
 -(IBAction)onClick:(id)sender
 {
-    NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
+    savedEvents = [NSUserDefaults standardUserDefaults];
     if (savedEvents != nil)
     {
         [savedEvents setObject:eventDetails forKey:@"details"];
         [savedEvents synchronize];
-        
+        //display save alert
+        NSString *tempStr = @"Your information is saved.";
+        UIAlertView *displayString = [[UIAlertView alloc] initWithTitle:@"Hi" message:tempStr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [displayString show];
     }
 }
 @end

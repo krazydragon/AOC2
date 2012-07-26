@@ -30,7 +30,7 @@
     //set current date and local timezone
     eventDatePicker.timeZone = [NSTimeZone localTimeZone];
     [eventDatePicker setMinimumDate:[NSDate date]];
-    
+    //create swipe area
     leftSwiper =[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe)];
     leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
     [saveEvent addGestureRecognizer:leftSwiper];
@@ -65,7 +65,7 @@
         eventDate = datePicker.date;
     }
 }
-
+//verify info is entered and transfer info to main screen.
 -(void)onSwipe
 {
     //setup date format
@@ -77,7 +77,7 @@
         
     } 
     
-    //make sure that user has selected a date
+    //make sure that user has selected a date and entered event
     if ((tempDate == nil) || ([eventTextField.text isEqualToString:@""]))
     {
         NSString *tempStr = @"Please verify that an event is entered and a date is selected!";

@@ -14,6 +14,7 @@
 {
     IBOutlet UITextView *eventView;
     NSMutableString *eventDetails;
+    NSUserDefaults *savedEvents;
     
 }
 
